@@ -130,9 +130,9 @@
                 <a href="#" class="text-xs font-medium text-gray-400 hover:text-gray-200">View profile</a>
             </div>
         </div>
-        <button class="mt-4 w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium text-white bg-blue-600 hover:bg-blue-700">
+        <a href="{{ route('logout') }}"  class="mt-4 w-full flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium text-white bg-blue-600 hover:bg-blue-700">
             <i class="fas fa-sign-out-alt mr-2"></i>
             Sign out
-        </button>
+        </a>
     </div>
 </aside>
