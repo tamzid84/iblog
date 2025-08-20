@@ -36,15 +36,15 @@ npm install && npm run dev
 
 3. Configure .env
   
-  cp .env.example .env
+  --cp .env.example .env
 
 4. Generate key
-   php artisan key:generate
+  -- php artisan key:generate
 
 5. Run migrations
 
-   php artisan migrate
+   --php artisan migrate
 
 6. Serve the app
 
-   php artisan serve
+  -- php artisan serve
