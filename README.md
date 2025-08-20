@@ -48,3 +48,9 @@ npm install && npm run dev
 6. Serve the app
 
   -- php artisan serve
+7. Login
+User logs in with demo@example.com / password123
+
+
+Redirect to admin/dashboard shows: “admin dashboard”
+
