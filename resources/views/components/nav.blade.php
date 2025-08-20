@@ -25,20 +25,20 @@
                                     <i class="fas fa-chevron-right text-xs"></i>
 </button>
 <div class="absolute left-full top-0 mt-0 w-64 bg-white rounded-md shadow-lg hidden desktop-dropdown-submenu">
-<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/categories">Machine Learning</a>
-<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/categories">Deep Learning</a>
+<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/single-blog">Machine Learning</a>
+<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/single-blog">Deep Learning</a>
 <a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/categories">NLP</a>
 </div>
 </div>
-<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/categories">Cloud Computing</a>
-<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/categories">Cybersecurity</a>
-<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/categories">Mobile Development</a>
-<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/categories">DevOps</a>
+<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/single-blog">Cloud Computing</a>
+<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/single-blog">Cybersecurity</a>
+<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/single-blog">Mobile Development</a>
+<a class="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition" href="/single-blog">DevOps</a>
 </div>
 </div>
 </div>
 <a class="text-gray-600 hover:text-blue-600 transition" href="/profile">About</a>
-<a class="text-gray-600 hover:text-blue-600 transition" href="/single-blog">Blog</a>
+<a class="text-gray-600 hover:text-blue-600 transition" href="/blog">Blog</a>
 
   {{-- Mobile Menu --}}
     <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
@@ -73,23 +73,23 @@
                                 <i class="fas fa-chevron-down ml-1 text-sm"></i>
                             </button>
                             <div id="mobile-ai-submenu" class="hidden pl-4 mobile-dropdown-submenu">
-                                <a href="/categories" class="block py-2 text-gray-600 hover:text-blue-600 transition">Machine
+                                <a href="/single-blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">Machine
                                     Learning</a>
-                                <a href="/categories" class="block py-2 text-gray-600 hover:text-blue-600 transition">Deep
+                                <a href="/single-blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">Deep
                                     Learning</a>
-                                <a href="/categories" class="block py-2 text-gray-600 hover:text-blue-600 transition">NLP</a>
+                                <a href="/single-blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">NLP</a>
                             </div>
                         </div>
-                        <a href="/categories" class="block py-2 text-gray-600 hover:text-blue-600 transition">Cloud Computing</a>
-                        <a href="/categories" class="block py-2 text-gray-600 hover:text-blue-600 transition">Cybersecurity</a>
-                        <a href="/categories" class="block py-2 text-gray-600 hover:text-blue-600 transition">Mobile
+                        <a href="/single-blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">Cloud Computing</a>
+                        <a href="/single-blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">Cybersecurity</a>
+                        <a href="/single-blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">Mobile
                             Development</a>
-                        <a href="/categories" class="block py-2 text-gray-600 hover:text-blue-600 transition">DevOps</a>
+                        <a href="/single-blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">DevOps</a>
                     </div>
                 </div>
             </div>
             <a href="/profile" class="block py-2 text-gray-600 hover:text-blue-600 transition">About</a>
-            <a href="/single-blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">Blog</a>
+            <a href="/blog" class="block py-2 text-gray-600 hover:text-blue-600 transition">Blog</a>
         </div>
     </div>
     

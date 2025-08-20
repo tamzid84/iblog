@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use App\Models\Post;
+use App\Models\Category;    
 
 class PageController extends Controller
 {
     // Show pages
-    public function index() { return view('index'); }
+  
+
+    
     public function categories() { return view('categories'); }
     public function profile() { return view('profile'); }
     public function login() { return view('login'); }
@@ -16,7 +20,7 @@ class PageController extends Controller
     public function singleBlog() { return view('single-blog'); }
 
     public function welcome() { return view('welcome'); }
-
+    
     // Handle login form
     public function loginSubmit(Request $request)
     {
@@ -33,7 +37,7 @@ class PageController extends Controller
         if ($request->email === $demoEmail && $request->password === $demoPassword) {
             // Store user in session
             session(['user' => $demoName]);
-            return redirect('/welcome')->with('success', 'Login successfully!');
+            return redirect('admin/dashboard')->with('success', 'Login successfully!');
         } else {
             return back()->withErrors([
                 'email' => 'Invalid credentials. Try demo@example.com / password123'

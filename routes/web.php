@@ -3,8 +3,14 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PostShowController;
+use App\Models\Category;            
+use App\Models\Post;
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [BlogController::class, 'home'])->name('home');
 Route::get('/categories', [PageController::class, 'categories']);
 Route::get('/profile', [PageController::class, 'profile']);
 Route::get('/login', [PageController::class, 'login']);
@@ -15,6 +21,34 @@ Route::post('/register', [PageController::class, 'registerSubmit'])->name('regis
 
 Route::post('/login', [PageController::class, 'loginSubmit'])->name('login.submit');
 Route::get('/logout', [PageController::class, 'logout'])->name('logout');
+
+Route::get('/admin/dashboard', fn () => view('admin.dashboard'))->name('admin.dashboard');
+
+Route::prefix('admin')->group(function () {
+    Route::resource('categories', CategoryController::class);
+    Route::resource('posts', PostController::class);
+});
+
+
+
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+
+
+Route::get('/post/{post:slug}', PostShowController::class)->name('post.show');
+
+// already had single post:
+//Route::get('/post/{post:slug}', fn(\App\Models\Post $post) => view('blog.show', compact('post')))->name('post.show');
+// Route::get('/blog', function () {
+//     $categories = \App\Models\Category::with(['posts'=>fn($q)=>$q->latest()])->orderBy('name')->get();
+//     return view('blog.index', compact('categories'));
+// });
+
+// Route::get('/post/{post:slug}', function (\App\Models\Post $post) {
+//     return view('blog.show', compact('post'));
+// });
+
+
+
 
 // Route::get('/', function () {
 //     return view('index');
@@ -41,3 +75,5 @@ Route::get('/logout', [PageController::class, 'logout'])->name('logout');
 // Route::view('/login', 'login');
 // Route::view('/register', 'register');
 // Route::view('/single-blog', 'single-blog');
+
+
