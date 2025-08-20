@@ -50,7 +50,6 @@ npm install && npm run dev
   -- php artisan serve
 7. Login
 User logs in with demo@example.com / password123
-
-
+Here login system is not dynamic
 Redirect to admin/dashboard shows: “admin dashboard”
 
